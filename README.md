@@ -1,2 +1,3 @@
 # wdd231
-Learning web frontend fundamentals. Developing expertise with HTML, CSS and JavaScript for web development. Learning to work with APIs.
+My name is Esteban Rubén Mangas Calva. I'm a programmer and web design student. I have my own business with my wife; and in previous courses I created the first web site for our business called Sara Mangas Creations.
+This respository, code and projects are for learning web frontend fundamentals. To develop expertise with HTML, CSS and JavaScript for web development, and to learn to work with APIs.
