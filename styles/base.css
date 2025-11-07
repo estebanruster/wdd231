@@ -1,0 +1,59 @@
+/*Base css style for the page; design to fit in smaller screens (mobile)*/
+
+/*Universal selector for initial values and fonts*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Fonts pending*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Global CSS variables for color scheme, borders and recurrent style rules*/
+:root {
+    --main-color: rgba(2, 76, 170, 0.8);
+    --second-color: rgba(236, 131, 5);
+    --contrast-color: rgba(219, 211, 211);
+    --logo-color: rgba(9, 16, 87);
+    --text-color-light-bkg: black;
+    --text-color-dark-bkg: white;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    column-gap: 1rem;
+    padding: 5px 0 5px 10px;
+    background-color: var(--contrast-color);
+    align-items: end;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 3px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--logo-color);
+}
+
+/*Styling ham menu button*/
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--logo-color);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+}

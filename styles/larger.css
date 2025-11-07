@@ -1,0 +1,15 @@
+/*CSS for larger screens; rulesets within an @media query*/
+@media screen and (min-width: 640px) {
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+}
