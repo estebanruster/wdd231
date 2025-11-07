@@ -11,12 +11,15 @@
 
 /*Global CSS variables for color scheme, borders and recurrent style rules*/
 :root {
-    --main-color: rgba(2, 76, 170, 0.8);
-    --second-color: rgba(236, 131, 5);
+    --main-color: rgba(2, 76, 170, 1);
+    --main-color-alpha: rgba(2, 76, 170, 0.6);
+    --second-color: rgba(236, 131, 5, 1);
+    --second-color-alpha: rgba(236, 131, 5, 0.8);
     --contrast-color: rgba(219, 211, 211);
     --logo-color: rgba(9, 16, 87);
     --text-color-light-bkg: black;
     --text-color-dark-bkg: white;
+    --basic-border: 1px solid rgba(219, 211, 211);
 }
 
 header {
@@ -56,4 +59,38 @@ header span {
 
 .hamburger.show::after {
     content: "\00D7";
+}
+
+/*Styling navigation bar*/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+    margin: auto;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: var(--logo-color);
+    border-bottom: var(--basic-border);
+    padding: 0.8rem 10px;
+}
+
+.navigation a:hover {
+    background-color: var(--main-color);
+    color: var(--text-color-dark-bkg);
+}
+
+.navigation ul li.current {
+    background-color: var(--second-color-alpha);
 }

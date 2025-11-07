@@ -5,11 +5,27 @@
         margin: 0 auto;
     }
     
+    /*Hidding menu button*/
     .hamburger {
         display: none;
     }
 
     header {
         grid-template-columns: 24px auto;
+    }
+
+    /*Showing nav bar*/
+    .navigation {
+        display: block;
+        border-bottom: var(--basic-border);
+    }
+
+    .navigation ul {
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .navigation a {
+        border: none;
     }
 }
