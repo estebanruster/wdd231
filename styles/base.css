@@ -119,6 +119,7 @@ section {
 
 section p {
     padding: 1rem;
+    color: var(--text-color-dark-bkg);
 }
 
 section img {
