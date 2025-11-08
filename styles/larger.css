@@ -1,7 +1,7 @@
 /*CSS for larger screens; rulesets within an @media query*/
 @media screen and (min-width: 640px) {
     header, main, nav, footer {
-        max-width: 900px;
+        max-width: 1200px;
         margin: 0 auto;
     }
     

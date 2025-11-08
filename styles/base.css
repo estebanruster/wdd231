@@ -6,13 +6,13 @@
     padding: 0;
     box-sizing: border-box;
     /*Fonts pending*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Nunito Sans', 'Roboto';
 }
 
 /*Global CSS variables for color scheme, borders and recurrent style rules*/
 :root {
     --main-color: rgba(2, 76, 170, 1);
-    --main-color-alpha: rgba(2, 76, 170, 0.6);
+    --main-color-alpha: rgba(2, 76, 170, 0.8);
     --second-color: rgba(236, 131, 5, 1);
     --second-color-alpha: rgba(236, 131, 5, 0.8);
     --contrast-color: rgba(219, 211, 211);
@@ -22,6 +22,7 @@
     --basic-border: 1px solid rgba(219, 211, 211);
 }
 
+/*Styling header*/
 header {
     display: grid;
     grid-template-columns: 24px auto 44px;
@@ -93,4 +94,73 @@ header span {
 
 .navigation ul li.current {
     background-color: var(--second-color-alpha);
+}
+
+/*Styling main*/
+main {
+    padding: 5px 10px;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px 0 5px 0;
+}
+
+h2 {
+    background-color: var(--second-color);
+    padding: 5px 0;
+    text-align: center;
+}
+
+section {
+    background-color: var(--main-color-alpha);
+    margin: 0 0 1rem 0;
+}
+
+section p {
+    padding: 1rem;
+}
+
+section img {
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+}
+
+/*Styling footer*/
+footer {
+    padding: 1rem 10px;
+    background-color: var(--logo-color);
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 10%;
+}
+
+.social a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    justify-content: center;
+    border: var(--basic-border);
+}
+
+.social a:hover {
+    background-color: var(--main-color);
+}
+
+.social img {
+    display: block;
+    width: 70%;
+    height: auto;
+    padding-bottom: 3px;
+}
+
+footer p {
+    color: var(--second-color);
+    padding-top: 1rem;
 }
