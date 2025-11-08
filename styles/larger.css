@@ -28,4 +28,20 @@
     .navigation a {
         border: none;
     }
+
+    /*Styling main for larger screens*/
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr auto auto;
+        gap: 10px;
+    }
+
+    main h1 {
+        grid-column: 1 / 3;
+    }
+
+    main .courses {
+        grid-column: 1 / 3;
+    }
 }

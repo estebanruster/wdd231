@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script defer src="scripts/navigation.js"></script>
     <script defer src="scripts/dates.js"></script>
+    <script defer src="scripts/course-cards.js"></script>
 </head>
 
 <body>
@@ -49,9 +50,16 @@
             <h2>Student Photo</h2>
             <img src="images/profile.webp" alt="Esteban Mangas profile picture">
         </section>
-        <section>
+        <section class="courses">
             <h2>Web Certificate Courses</h2>
-            <div class="card" id="course-cards">
+            <nav id="nav-courses" class="navigation">
+                <ul>
+                    <li><a href="#" id="all">All courses</a></li>
+                    <li><a href="#" id="wdd">WDD courses</a></li>
+                    <li><a href="#" id="cse">CSE courses</a></li>
+                </ul>
+            </nav>
+            <div class="cards" id="course-cards">
 
             </div>
         </section>

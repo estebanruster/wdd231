@@ -127,6 +127,50 @@ section img {
     padding: 10px 0;
 }
 
+/*Styling course cards section*/
+#nav-courses {
+    display: block;
+    border: none;
+    width: 100%;
+    column-gap: normal;
+    margin: 5px 0;
+}
+
+#nav-courses ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10%;
+}
+
+#nav-courses ul li {
+    text-align: center;
+    background-color: var(--logo-color);
+    border-radius: 20px;
+    border: var(--basic-border);
+}
+
+#nav-courses a {
+    display: block;
+    border: none;
+    color: var(--text-color-dark-bkg);
+    border-radius: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    text-align: center;
+    padding: 5px;
+}
+
+.cards p {
+    background-color: var(--contrast-color);
+    margin: 5px;
+    border-radius: 20px;
+    color: var(--logo-color);
+}
+
 /*Styling footer*/
 footer {
     padding: 1rem 10px;
@@ -157,7 +201,6 @@ footer {
     display: block;
     width: 70%;
     height: auto;
-    padding-bottom: 3px;
 }
 
 footer p {
