@@ -1,0 +1,199 @@
+/*Base css style for the page; design to fit in smaller screens (mobile)*/
+
+/*Universal selector for initial values and fonts*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Fonts pending*/
+    font-family: 'Nunito Sans', 'Roboto';
+}
+
+/*Global CSS variables for color scheme, borders and recurrent style rules*/
+:root {
+    --color-scheme-logo: rgb(218, 165, 32);
+    --color-scheme-darker-logo: rgb(184, 134, 11);
+    --color-scheme-secondary: rgb(135, 66, 22);
+    --color-scheme-secondary-darker: rgb(44, 28, 8);
+    --color-scheme-contrast: rgb(212, 167, 189);
+    --text-color-dark-bkg: white;
+    --text-color-light-bkg: black;
+    --basic-border: 1px solid rgba(219, 211, 211);
+}
+
+/*Styling header*/
+header {
+    display: grid;
+    grid-template-columns: 24px auto auto 44px;
+    grid-template-rows: auto auto;
+    column-gap: 1rem;
+    padding: 5px 0 5px 10px;
+    background-color: var(--color-scheme-secondary-darker);
+    align-items: end;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--color-scheme-logo);
+}
+
+/*Styling ham menu button*/
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--color-scheme-logo);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-column: 4 / 5;
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2.39rem;
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+}
+
+/*Styling navigation bar*/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+    margin: auto;
+    grid-row: 2 / 3;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: var(--color-scheme-logo);
+    border-bottom: var(--basic-border);
+    padding: 0.8rem 0;
+}
+
+.navigation a:hover {
+    background-color: var(--color-scheme-contrast);
+    color: var(--color-scheme-secondary-darker);
+}
+
+.navigation ul li.current {
+    background-color: var(--color-scheme-secondary);
+}
+
+.navigation li.current a {
+    color: var(--text-color-dark-bkg);
+}
+
+.navigation li.current a:hover {
+    color: var(--color-scheme-secondary-darker);
+}
+
+/*Styling course cards section*/
+#nav-directory {
+    display: block;
+    border: none;
+    width: 100%;
+    column-gap: normal;
+    margin: 5px 0;
+}
+
+#nav-directory ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10%;
+}
+
+#nav-directory ul li {
+    text-align: center;
+    background-color: var(--color-scheme-darker-logo);
+    border-radius: 20px;
+    border: var(--basic-border);
+}
+
+#nav-directory a {
+    display: block;
+    border: none;
+    color: var(--text-color-dark-bkg);
+    border-radius: 20px;
+    padding: 13px;
+}
+
+#nav-directory a:hover {
+    color: var(--color-scheme-secondary-darker);
+}
+
+/*Styling footer*/
+footer {
+    padding: 1rem 10px;
+    background-color: var(--logo-color);
+    text-align: center;
+    background-color: var(--color-scheme-contrast);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 10%;
+}
+
+.social a {
+    display: flex;
+    width: 45.5px;
+    height: 45.5px;
+    border-radius: 10px;
+    justify-content: center;
+    border: var(--basic-border);
+    background-color: white;
+}
+
+.social a:hover {
+    background-color: var(--color-scheme-secondary-darker);
+}
+
+.social img {
+    display: block;
+    width: 70%;
+    height: auto;
+}
+
+footer p,
+footer .foot-title {
+    text-align: left;
+}
+
+footer .foot-title {
+    display: block;
+    font-weight: bolder;
+}
+
+footer div {
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width: 414.4px) {
+    header span {
+        padding-bottom: 10px;
+    }
+}

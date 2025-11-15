@@ -1,0 +1,46 @@
+/*CSS for larger screens; rulesets within an @media query*/
+@media screen and (min-width: 640px) {
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /*Hidding menu button*/
+    .hamburger {
+        display: none;
+    }
+
+    /*Showing nav bar*/
+    .navigation {
+        display: block;
+        border-bottom: var(--basic-border);
+        grid-row: 1 / 2;
+        grid-column: 3 / 5;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .navigation a {
+        border: none;
+        padding: 0.8rem 10px;
+    }
+
+    /*Footer in larger view*/
+    footer {
+        flex-direction: row;
+    }
+
+    footer div {
+        padding: 10px;
+    }
+
+    footer .social {
+        flex-basis: 300px;
+    }
+}
