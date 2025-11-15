@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Sara Mangas Creations",
+            "address": "202 Blvd. del Refugio, Unit. B, Building B, Apt. 102",
+            "phoneNumber": "4423548436",
+            "websiteUrl": "smcreations.org",
+            "image": "../images/chamber-logo.svg",
+            "membershipLevel": 1,
+            "businessLine": "Personalized Stationery and Gifts"
+        },
+        {
+            "name": "El Coronel",
+            "address": "101 Blvd. del Refugio, Unit. 4",
+            "phoneNumber": "442X548437",
+            "websiteUrl": "coronel.org",
+            "image": "../images/chamber-logo.svg",
+            "membershipLevel": 1,
+            "businessLine": "Delicatessen"
+        },
+        {
+            "name": "Fruit Shop HDZ",
+            "address": "101 Blvd. del Refugio, Unit. 5",
+            "phoneNumber": "442X548438",
+            "websiteUrl": "freshfruithdz.org",
+            "image": "../images/chamber-logo.svg",
+            "membershipLevel": 2,
+            "businessLine": "Fruits, Vegetables and Grocery"
+        },
+        {
+            "name": "Barber & Salon",
+            "address": "101 Blvd. del Refugio, Unit. 6",
+            "phoneNumber": "442X548439",
+            "websiteUrl": "stylesalon.org",
+            "image": "../images/chamber-logo.svg",
+            "membershipLevel": 2,
+            "businessLine": "Hair salon"
+        },
+        {
+            "name": "Little Italy Gelato",
+            "address": "101 Blvd. del Refugio, Unit. 7",
+            "phoneNumber": "442X548440",
+            "websiteUrl": "littleitaly.org",
+            "image": "../images/chamber-logo.svg",
+            "membershipLevel": 1,
+            "businessLine": "Ice cream"
+        },
+        {
+            "name": "3B Grocery Store",
+            "address": "100 Blvd. del Refugio",
+            "phoneNumber": "442X548441",
+            "websiteUrl": "3bgrocery.org",
+            "image": "../images/chamber-logo.svg",
+            "membershipLevel": 3,
+            "businessLine": "Grocery"
+        },
+        {
+            "name": "Entrepreneur Women C.A.",
+            "address": "43 Bufalo, La Pradera",
+            "phoneNumber": "442X54842X",
+            "websiteUrl": "praderaentwomen.org",
+            "image": "../images/chamber-logo.svg",
+            "membershipLevel": 3,
+            "businessLine": "Investors"
+        }
+    ]
+}
