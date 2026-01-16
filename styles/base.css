@@ -212,6 +212,6 @@ footer {
 }
 
 footer p {
-    color: var(--second-color);
+    color: var(--text-color-dark-bkg);
     padding-top: 1rem;
 }
