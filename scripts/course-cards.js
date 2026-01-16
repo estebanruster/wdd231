@@ -81,6 +81,15 @@ const courses = [
     }
 ]
 
+function totalCredits(courses) {
+    const sum = courses.reduce((accumulator, course) => accumulator + course.credits, 0);
+    const courseCredits = document.querySelector("#credits")
+    courseCredits.textContent = `The total number of credits listed below is ${sum}`;
+}
+/*
+const totalCredits = (courses) => courses.reduce((accumulator, course) => accumulator + course.credits, 0);
+document.querySelector("#credits").innerHTML = `The total number of credits listed below is ${totalCredits}`;*/
+
 function courseTemplate(course) {
     let check = "";
     if (course.completed === true) {
@@ -97,16 +106,20 @@ function courseCard(courses) {
 const allCourses = document.querySelector("#all");
 allCourses.addEventListener("click", () => {
     courseCard(courses);
+    totalCredits(courses);
 });
 
 const wddCourses = document.querySelector("#wdd");
 wddCourses.addEventListener("click", () => {
     courseCard(courses.filter(course => course.subject === "WDD"));
+    totalCredits(courses.filter(course => course.subject === "WDD"));
 });
 
 const cseCourses = document.querySelector("#cse");
 cseCourses.addEventListener("click", () => {
     courseCard(courses.filter(course => course.subject === "CSE"));
+    totalCredits(courses.filter(course => course.subject === "CSE"));
 });
 
 courseCard(courses);
+totalCredits(courses);

@@ -158,6 +158,13 @@ section img {
     border-radius: 20px;
 }
 
+#credits {
+    display: block;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--text-color-dark-bkg);
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
