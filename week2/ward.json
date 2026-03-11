@@ -1,0 +1,50 @@
+{
+    "wardFamilies": [
+        {
+            "familyName": "Mangas Calderón",
+            "dateMoved": "03/10/2023",
+            "numberOfMembers": 3,
+            "bishopricVisited": true,
+            "familyMembers": [
+                {
+                    "name": "Esteban Mangas",
+                    "gender": "male",
+                    "birthdate": "10/29/1996"
+                },
+                {
+                    "name": "Sara Mangas Calderón",
+                    "gender": "female",
+                    "birthdate": "12/01/1997"
+                },
+                {
+                    "name": "Perla Calderón",
+                    "gender": "female",
+                    "birthdate": "12/19/1999"
+                }
+            ]
+        },
+        {
+            "familyName": "del Angel",
+            "dateMoved": "09/10/2025",
+            "numberOfMembers": 3,
+            "bishopricVisited": true,
+            "familyMembers": [
+                {
+                    "name": "Omar del Angel",
+                    "gender": "male",
+                    "birthdate": "01/25/1997"
+                },
+                {
+                    "name": "Ana del Angel Gregorio",
+                    "gender": "female",
+                    "birthdate": "04/11/1998"
+                },
+                {
+                    "name": "Mariana del Angel",
+                    "gender": "female",
+                    "birthdate": "11/23/2025"
+                }
+            ]
+        }
+    ]
+}
