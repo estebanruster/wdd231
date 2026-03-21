@@ -106,7 +106,7 @@ header span {
     color: var(--color-scheme-secondary-darker);
 }
 
-/*Styling course cards section*/
+/*Styling member button displays*/
 #nav-directory {
     display: block;
     border: none;
@@ -139,6 +139,40 @@ header span {
 
 #nav-directory a:hover {
     color: var(--color-scheme-secondary-darker);
+}
+
+/*Styling card display of members*/
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+    padding: 5px;
+}
+
+#cards section {
+    margin: auto;
+    width: 200px;
+    height: 95%;
+    padding: 1rem;
+    background-color: var(--color-scheme-contrast);
+}
+
+#cards section p {
+    padding: 5px;
+}
+
+#cards section a {
+    padding: 5px;
+}
+
+#cards section img {
+    display: block;
+    margin: 1rem 0;
+    padding: 10px 0;
+    max-width: 100%;
+    height: auto;
+    background-color: var(--text-color-dark-bkg);
+    border-radius: 70px;
 }
 
 /*Styling footer*/
