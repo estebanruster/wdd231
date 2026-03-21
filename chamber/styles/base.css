@@ -203,7 +203,6 @@ header span {
 /*Styling footer*/
 footer {
     padding: 1rem 10px;
-    background-color: var(--logo-color);
     text-align: center;
     background-color: var(--color-scheme-contrast);
     display: flex;
