@@ -185,7 +185,6 @@ header span {
 .display-list ul {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
-    justify-content: baseline;
     margin: 5px;
     list-style-type: none;
     column-gap: 10px;
