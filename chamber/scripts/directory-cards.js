@@ -1,5 +1,5 @@
 const url = "./data/members.json";
-const cards = document.querySelector('#cards');
+const cards = document.querySelector('.cards');
 let condition = true;
 
 async function getCompanieData() {
@@ -60,6 +60,7 @@ function cardTemplate(companies) {
 
 function listTemplate(companies) {
     companies.forEach((companie) => {
+        /*
         let membership = "";
         if (companie.membershipLevel === 3) {
             membership = `GOLD`;
@@ -70,24 +71,25 @@ function listTemplate(companies) {
         else {
             membership = `Member`;
         }
+        */
 
         let list = document.createElement('ul');
         let name = document.createElement('li');
         let business = document.createElement('li');
-        let membershipLvl = document.createElement('li');
-        let address = document.createElement('li');
+        //let membershipLvl = document.createElement('li');
+        //let address = document.createElement('li');
         let phone = document.createElement('li');
 
         name.textContent = `${companie.name}`;
         business.textContent = `${companie.businessLine}`;
-        membershipLvl.textContent = `${membership}`;
-        address.textContent = `${companie.address}`;
+        //membershipLvl.textContent = `${membership}`;
+        //address.textContent = `${companie.address}`;
         phone.textContent = `${companie.phoneNumber}`;
 
         list.appendChild(name);
         list.appendChild(business);
-        list.appendChild(membershipLvl);
-        list.appendChild(address);
+        //list.appendChild(membershipLvl);
+        //list.appendChild(address);
         list.appendChild(phone);
         cards.appendChild(list);
     });
@@ -97,6 +99,8 @@ const listView = document.querySelector("#list");
 listView.addEventListener("click", () => {
     condition = false;
     cards.innerHTML = '';
+    cards.classList.add('display-list');
+    cards.classList.remove('cards');
     getCompanieData();
 });
 
@@ -104,6 +108,8 @@ const cardView = document.querySelector("#card");
 cardView.addEventListener("click", () => {
     condition = true;
     cards.innerHTML = '';
+    cards.classList.add('cards');
+    cards.classList.remove('display-list');
     getCompanieData();
 });
 

@@ -142,14 +142,14 @@ header span {
 }
 
 /*Styling card display of members*/
-#cards {
+.cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     text-align: center;
     padding: 5px;
 }
 
-#cards section {
+.cards section {
     margin: auto;
     width: 200px;
     height: 95%;
@@ -157,15 +157,21 @@ header span {
     background-color: var(--color-scheme-contrast);
 }
 
-#cards section p {
-    padding: 5px;
+.cards section p {
+    padding: 10px;
 }
 
-#cards section a {
-    padding: 5px;
+.cards section a {
+    text-decoration: none;
+    color: var(--color-scheme-secondary-darker);
+    border-radius: 10px;
 }
 
-#cards section img {
+.cards section a:hover {
+    background-color: var(--text-color-dark-bkg);
+}
+
+.cards section img {
     display: block;
     margin: 1rem 0;
     padding: 10px 0;
@@ -173,6 +179,26 @@ header span {
     height: auto;
     background-color: var(--text-color-dark-bkg);
     border-radius: 70px;
+}
+
+/*Styling list display of members*/
+.display-list ul {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    justify-content: baseline;
+    margin: 5px;
+    list-style-type: none;
+    column-gap: 10px;
+    border: var(--basic-border);
+}
+
+.display-list ul:nth-child(even) {
+    background-color: var(--color-scheme-contrast);
+}
+
+.display-list li {
+    text-align:left;
+    padding: 4px 0;
 }
 
 /*Styling footer*/
