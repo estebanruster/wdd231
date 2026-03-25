@@ -1,4 +1,3 @@
-//Exporting from this module the setSectionSelection function
 export function setSectionSelection(sections) {
     const sectionSelect = document.querySelector("#sectionNumber");
     sections.forEach((section) => {

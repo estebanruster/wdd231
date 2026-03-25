@@ -26,13 +26,12 @@ const byuiCourse = {
         if (sectionIndex >= 0) {
             if (add) {
                 this.sections[sectionIndex].enrolled++;
-            }
-            else {
+            } else {
                 this.sections[sectionIndex].enrolled--;
             }
+            // renderSections(this.sections);
         }
     },
 };
 
-//Exporting from this module the byuiCourse object
 export default byuiCourse;

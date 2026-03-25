@@ -1,11 +1,7 @@
-//Importing the setSectionSelection function
-import { setSectionSelection } from "./section.mjs";
-
-//Importing the functions from output module
-import { setTitle, renderSections } from "./output.mjs";
-
-//Importing the byuiCourse class
+//import from the modules scripts
 import byuiCourse from "./course.mjs";
+import { setSectionSelection } from "./sections.mjs";
+import { setTitle, renderSections } from "./output.mjs";
 
 document.querySelector("#enrollStudent").addEventListener("click", function () {
     const sectionNum = Number(document.querySelector("#sectionNumber").value);
