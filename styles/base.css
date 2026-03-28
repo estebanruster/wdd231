@@ -20,6 +20,9 @@
     --text-color-light-bkg: black;
     --text-color-dark-bkg: white;
     --basic-border: 1px solid rgba(219, 211, 211);
+    --modal-border: 1px solid rgba(9, 16, 87);
+    --modal-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    --backdrop-color: rgba(0, 0, 0, 0.5);
 }
 
 /*Styling header*/
@@ -177,6 +180,31 @@ section img {
     margin: 5px;
     border-radius: 20px;
     color: var(--logo-color);
+}
+
+/*Styling dialog modal within the main; to show when a course card is clicked*/
+#course-details {
+    max-width: 75%;
+    width: 900px;
+    background-color: var(--contrast-color);
+    border: var(--modal-border);
+    border-radius: 10px;
+    box-shadow: var(--modal-shadow);
+    padding: 20px;
+    margin: auto;
+}
+
+::backdrop {
+    background-color: var(--backdrop-color);
+}
+
+dialog button {
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    background-color: var(--contrast-color);
+    border: var(--modal-border);
+    padding: 0.75rem 0.826rem;
 }
 
 /*Styling footer*/

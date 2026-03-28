@@ -95,12 +95,21 @@ function courseTemplate(course) {
     if (course.completed === true) {
         check = "✔️";
     }
-    return `<p>${check}${course.subject} ${course.number}</p>`;
+    let template = document.createElement('p');
+    template.setAttribute('id', `course-${course.subject}${course.number}`);
+    template.textContent = `${check}${course.subject} ${course.number}`;
+    document.querySelector("#course-cards").appendChild(template);
 }
 
 function courseCard(courses) {
-    const html = courses.map(courseTemplate);
-    document.querySelector("#course-cards").innerHTML = html.join("");
+    //const html = courses.map(courseTemplate);
+    //document.querySelector("#course-cards").innerHTML = html.join("");
+    courses.forEach(course => {
+        courseTemplate(course);
+        document.querySelector(`#course-${course.subject}${course.number}`).addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
+    });
 }
 
 const allCourses = document.querySelector("#all");
@@ -120,6 +129,48 @@ cseCourses.addEventListener("click", () => {
     courseCard(courses.filter(course => course.subject === "CSE"));
     totalCredits(courses.filter(course => course.subject === "CSE"));
 });
+
+/*Function and code for the dialog modal*/
+const modal = document.querySelector('#course-details');
+
+function displayCourseDetails(course) {
+    //Button to close course details modal
+    let closeModalButton = document.createElement('button');
+    closeModalButton.setAttribute('id', 'closeModal');
+    closeModalButton.innerHTML = '❌';
+    //h2 title with subject and number
+    let courseSubject = document.createElement('h2');
+    courseSubject.innerHTML = `${course.subject} ${course.number}`;
+    //h3 title for course title
+    let courseTitle = document.createElement('h3');
+    courseTitle.innerHTML = `${course.title}`;
+    //p for course credits info
+    let courseCredits = document.createElement('p');
+    courseCredits.innerHTML = `${course.credits} credits`;
+    //p for course description
+    let courseDescription = document.createElement('p');
+    courseDescription.innerHTML = `${course.description}`;
+    //p for course certificate
+    let courseCertificate = document.createElement('p');
+    courseCertificate.innerHTML = `Certificate ${course.certificate}`;
+    //p with .join for the array of technolgy
+    let courseTechnology = document.createElement('p');
+    courseTechnology.innerHTML = `Technologies: ${course.technology.join(', ')}`;
+    //appending the elements created as childs of modal
+    modal.appendChild(closeModalButton);
+    modal.appendChild(courseSubject);
+    modal.appendChild(courseTitle);
+    modal.appendChild(courseCredits);
+    modal.appendChild(courseDescription);
+    modal.appendChild(courseCertificate);
+    modal.appendChild(courseTechnology);
+    //managing the modal of course details
+    modal.showModal();
+    closeModalButton.addEventListener("click", () => {
+        modal.close();
+        modal.innerHTML = '';
+    });
+}
 
 courseCard(courses);
 totalCredits(courses);
