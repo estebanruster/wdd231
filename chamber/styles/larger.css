@@ -31,6 +31,17 @@
         padding: 0.8rem 10px;
     }
 
+    /*Home page grid*/
+    #home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #events {
+        grid-column: 1 / 3;
+    }
+
     /*Footer in larger view*/
     footer {
         flex-direction: row;

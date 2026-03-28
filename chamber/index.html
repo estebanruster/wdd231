@@ -31,9 +31,10 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <!--Scripts for navigation, date and directory cards-->
-    <script defer src="scripts/directory-cards.js"></script>
+    <!--<script defer src="scripts/directory-cards.js"></script>-->
     <script defer src="scripts/navigation.js"></script>
     <script defer src="scripts/dates.js"></script>
+    <script defer src="scripts/weather.js"></script>
 </head>
 
 <body>
@@ -51,7 +52,7 @@
         <button id="ham-button" class="hamburger" aria-label="menu"></button>
     </header>
     <main>
-       <!-- <h1>Directory</h1>
+        <!-- <h1>Directory</h1>
         <nav id="nav-directory" class="navigation">
             <ul>
                 <li><a href="#" id="card">Cards</a></li>
@@ -61,6 +62,34 @@
         <section class="directory">
             <div class="cards"></div>
         </section> -->
+        <div class="hero">
+            <picture>
+                <source srcset="images/chamber-large-hero.webp" media="(min-width: 640px)">
+                <source srcset="images/chamber-hero.webp" media="(min-width: 300px)">
+                <img src="images/chamber-small-hero.webp" alt="México hero image" width="400" height="600">
+            </picture>
+            <a class="call-to-action" href="#">Join the chamber now</a>
+        </div>
+        <h1>Home</h1>
+        <div id="home-grid">
+            <section class="div-home" id="events">
+                <h2>Events</h2>
+                <h3>Queretaro chamber of commerce anniversary</h3>
+                <p>We are celebrating with all our members and the community our anniversary. Through all this years we
+                    were working together and connecting people and business to each other, making our city a growing
+                    and evolving market. Check the details of our annual anniversary dinner with all our members and how
+                    you can participate <a href="#">here.</a></p>
+            </section>
+            <section class="div-home" id="current-weather">
+                <h2>Current Weather</h2>
+            </section>
+            <section class="div-home" id="weather-forecast">
+                <h2>Weather Forecast</h2>
+            </section>
+            <section class="featured-members">
+
+            </section>
+        </div>
     </main>
     <footer>
         <div class="contact">
