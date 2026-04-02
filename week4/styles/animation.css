@@ -1,0 +1,63 @@
+#first,
+#second {
+    border: 5px solid rgba(234, 102, 78);
+    border-color: transparent rgba(234, 102, 78);
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    margin: 3rem auto;
+    align-content: center;
+    border-radius: 70px;
+    box-shadow: 0 0 1rem 0.3rem rgba(241, 122, 3, 0.7);
+}
+
+#first {
+    animation: spin 1.5s linear infinite;
+}
+
+#second {
+    transition: transform 1.5s linear;
+}
+
+#first::after {
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: pulse 2s ease-in-out infinite;
+    transform: translate(-50%, -50%);
+}
+
+#second::after {
+    content: '⚙️';
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1.5s ease-in-out;
+    font-size: 2rem;
+}
+
+#second:hover {
+    transform: rotate(360deg);
+}
+
+#second:hover::after {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.8);
+    }
+}
