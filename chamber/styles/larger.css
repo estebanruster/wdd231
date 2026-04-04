@@ -42,6 +42,16 @@
         grid-column: 1 / 3;
     }
 
+    /*Join page grid*/
+    #join-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #membershipLvl {
+        margin-top: 1.2rem;
+    }
+
     /*Footer in larger view*/
     footer {
         flex-direction: row;

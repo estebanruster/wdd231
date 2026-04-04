@@ -35,7 +35,8 @@
     <!--<script defer src="scripts/directory-cards.js"></script>-->
     <script defer src="scripts/navigation.js"></script>
     <script defer src="scripts/dates.js"></script>
-    <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/modals.js"></script>
+    <!--<script defer src="scripts/weather.js"></script>-->
 </head>
 
 <body>
@@ -53,7 +54,87 @@
         <button id="ham-button" class="hamburger" aria-label="menu"></button>
     </header>
     <main>
-       
+        <h1>Join</h1>
+        <div id="join-grid">
+        <form method="get" action="thanks.html" class="joinForm">
+            <h2>Membership subscription form</h2>
+            <label>First Name <input type="text" required name="first" title="Your first name" autocomplete="given-name"></label>
+            <label>Last Name <input type="text"  required name="last" title="Your last name" autocomplete="family-name"></label>
+            <label>Organizational title <input type="text" name="title" title="Your organizational title" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}"></label>
+            <label>Email <input type="email" required name="email" title="Your email" autocomplete="email" placeholder="saramangas97@gmail.com"></label>
+            <label>Cell Phone <input type="tel" required name="phone" title="Your phone number" autocomplete="tel"></label>
+            <label>Organization Name <input type="text" required name="organization" title="Your organization/business name" autocomplete="organization"></label>
+            <label>Orgaization's description <textarea name="description" title="Your organization/business description"></textarea></label>
+            <label>Membership level
+                <select name="membership" required>
+                    <option value="">None</option>
+                    <option value="np">NP</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+            </label>
+            <input type="hidden" name="timestamp" id="timestamp" value="">
+            <input type="submit" value="Subscribe to the chamber">
+        </form>
+        <section id="membershipLvl">
+            <h2>Membership levels</h2>
+            <div class="lvlCards">
+                <p>Non Profit Membership Level</p>
+                <button class="modal-button" id="np">Learn More</button>    
+            </div>
+            <div class="lvlCards">
+                <p>Bronze Membership Level</p>
+                <button class="modal-button" id="bronze">Learn More</button>
+            </div>
+            <div class="lvlCards">
+                <p>Silver Membership Level</p>
+                <button class="modal-button" id="silver">Learn More</button>
+            </div>
+            <div class="lvlCards">
+                <p>Gold Membership Level</p>
+                <button class="modal-button" id="gold">Learn More</button>
+            </div>
+        </section>
+        </div>
+        <!--Modal dialog to be display when the user clicks the button in each memberhipLvl div cards-->
+        <dialog id="modal-np">
+            <button id="close-np">❌</button>
+            <p>FREE</p>
+            <ul>
+                <li>For non profit organizations</li>
+                <li>Appear in our membership directory</li>
+                <li>Participation in low-tier events</li>
+            </ul>
+        </dialog>
+        <dialog id="modal-bronze">
+            <button id="close-bronze">❌</button>
+            <p>$199 MXN per month</p>
+            <ul>
+                <li>Np membership benefits</li>
+                <li>Invitation to trainings and workshops</li>
+            </ul>
+        </dialog>
+        <dialog id="modal-silver">
+            <button id="close-silver">❌</button>
+            <p>$449 MXN per month</p>
+            <ul>
+                <li>Bronze membership benefits</li>
+                <li>Advertising discounts</li>
+                <li>Participation in our high-tier events</li>
+            </ul>
+        </dialog>
+        <dialog id="modal-gold">
+            <button id="close-gold">❌</button>
+            <p>$1099 MXN per month</p>
+            <ul>
+                <li>Silver memebership benefits</li>
+                <li>Spotlight position in the home page</li>
+                <li>Participation in our exclusive events</li>
+                <li>Special workshops and business opportunities</li>
+                <li>Vote rights as member of the Chamber of Commerce executive committee</li>
+            </ul>
+        </dialog>
     </main>
     <footer>
         <div class="contact">

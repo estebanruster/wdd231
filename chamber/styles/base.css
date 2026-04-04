@@ -281,7 +281,180 @@ h1 {
     margin: auto;
 }
 
-/*Styling*/
+/*Styling form, join page*/
+form {
+    margin: 1rem 2%;
+}
+
+form h2 {
+    font-size: 1.2rem;
+    color: var(--color-scheme-darker-logo);
+    margin: 1.5rem 0 .2rem 0;
+    border-bottom: var(--basic-border);
+ }
+
+label {
+    display: block;
+    font-size: .8rem;
+    color: var(--color-scheme-secondary-darker);
+    padding-top: .2rem;
+}
+
+input[type=text],
+input[type=tel],
+input[type=date],
+input[type=email],
+textarea,
+select {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border: 1px solid rgba(153, 153, 153);
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: rgba(85, 85, 85);
+    font-size: 1rem;
+    color: var(--color-scheme-secondary);
+    width: 250px;
+}
+
+input:required,
+select:required {
+    border-left-color: rgba(215, 0, 0);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-left-color: rgb(0, 0, 0);
+    outline: none;
+}
+
+input:required:valid,
+select:required:valid {
+    border-left-color: rgb(0, 128, 0);
+}
+
+input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: var(--color-scheme-secondary);
+    color: var(--text-color-dark-bkg);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type=submit]:focus,
+input[type=submit]:hover {
+    background-color: var(--color-scheme-darker-logo);
+    outline: 2px solid rgba(0, 0, 0);
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: var(--color-scheme-secondary);
+}
+
+#subscriptionInfo {
+    background-color: rgba(244, 241, 222);
+    padding: 0 1rem;
+    border: var(--basic-border);
+    border-radius: 10px;
+    margin: 1rem;
+    max-width: 95%;
+}
+
+#subscriptionInfo p {
+    padding: 0.7rem 0;
+}
+
+/*Styling join page*/
+#membershipLvl h2 {
+    color: var(--color-scheme-darker-logo);
+    padding: 1rem;
+}
+
+/*Animation for the membership level cards*/
+@keyframes slide {
+    from {
+            transform: translateY(100px);
+            background-color: var(--color-scheme-darker-logo);
+        }
+    
+        to {
+            transform: translate(0);
+        }
+}
+
+.lvlCards {
+    margin: 0 1.5rem 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    background-color: var(--color-scheme-logo);
+    border: var(--basic-border);
+    border-radius: 0 1rem;
+    animation: slide 2s ease-out;
+}
+
+.modal-button {
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: var(--color-scheme-secondary);
+    border-radius: 1rem;
+    border: var(--basic-border);
+    color: var(--text-color-dark-bkg);
+    width: fit-content;
+    appearance: none;
+}
+
+.modal-button:hover {
+    background-color: var(--color-scheme-contrast);
+    color: var(--color-scheme-secondary-darker);
+}
+
+dialog {
+    max-width: 75%;
+    width: 900px;
+    background-color: var(--color-scheme-contrast);
+    border: var(--basic-border);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: auto;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    background-color: var(--text-color-dark-bkg);
+    border: var(--basic-border);
+    padding: 0.75rem 0.826rem;
+}
+
+dialog p {
+    text-align: center;
+    font-weight: bolder;
+    margin: 1rem;
+}
+
+dialog ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+dialog li {
+    padding: 0.3rem;
+}
 
 /*Styling footer*/
 footer {
