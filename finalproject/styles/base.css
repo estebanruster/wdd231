@@ -1,0 +1,148 @@
+/*
+Author: Esteban Rubén Mangas Calva
+4/08/2026
+Base style for the final project; web site for Sara Mangas Creaciones (SMC)
+*/
+
+/*pseudo-element root that defines and contains the color schema and typography
+(and other standard styles that repeat in the page) for SMC web site*/
+:root {
+    --SMC-first-color: rgb(250, 176, 214);
+    --SMC-first-transparency: rgba(250, 176, 214, 0.8);
+    --SMC-second-color: rgb(128, 208, 205);
+    --SMC-second-transparency: rgba(128, 208, 205, 0.8);
+    --SMC-contrast-color: rgb(255, 255, 255);
+    --SMC-headings-font: 'Comic Relief';
+    --SMC-text-font: 'Delius';
+    --SMC-backup-font: sans-serif;
+    --some-border: 3px solid gray;
+}
+
+/*Universal selector; defines basic styling for the whole web site.
+Defining the typography of all the header elements and style*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--SMC-text-font), var(--SMC-backup-font);
+}
+
+h1 {
+    font-family: var(--SMC-headings-font);
+    padding: 0.5rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--SMC-headings-font);
+    padding: 0.5rem 0.3rem;
+    background-color: var(--SMC-first-color);
+    text-align: center;
+}
+
+/*Styling header*/
+header {
+    display: grid;
+    grid-template-columns: 100px auto auto 44px;
+    grid-template-rows: auto auto;
+    column-gap: 1rem;
+    padding: 5px 0 5px 10px;
+    background-color: var(--SMC-first-color);
+    align-items: end;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    /*padding-bottom: 10px;*/
+    border-radius: 48px;
+}
+
+header span {
+    font-size: 1.2rem;
+    align-self: center;
+    font-weight: bold;
+}
+
+/*Styling for the siteplan*/
+ul {
+    list-style: none;
+}
+
+p,
+li, 
+a {
+    padding: 1rem;
+}
+
+div {
+    background-color: var(--SMC-second-color);
+    margin: 1.9rem 0;
+    border: var(--some-border);
+}
+
+#site-plan {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto 1fr;
+}
+
+#site-plan span {
+    font-weight: bold;
+}
+
+#site-plan h2 {
+    grid-column: 1 / 3;
+}
+
+#site-plan p {
+    grid-column: 1 / 3;
+}
+
+#site-plan img{
+    display: block;
+    margin: auto;
+    padding: 1rem;
+}
+
+#first,
+#second,
+#contrast {
+    border: var(--some-border);
+    margin: 0.5rem;
+}
+
+#first {
+    background-color: var(--SMC-first-color);
+}
+
+#second {
+    background-color: var(--SMC-second-color);
+}
+
+#contrast {
+    background-color: var(--SMC-contrast-color);
+}
+
+#wireframe img {
+    display: block;
+    max-width: 95%;
+    margin: auto;
+    padding: 1rem;
+}
+
+#wireframe a {
+    display: block;
+}
+
+/*Defining maximum width of the page*/
+@media screen and (min-width: 640px) {
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
