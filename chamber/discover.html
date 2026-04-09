@@ -5,18 +5,19 @@
     <!--Meta page tags and favicon-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Querétaro Chamber of Commerce directory</title>
+    <title>Querétaro Chamber of Commerce discover page</title>
     <meta name="description"
-        content="WDD 231 - Web Frontend Development 1 - Directory page for the frontend project of a Chamber of commerce site.">
+        content="WDD 231 - Web Frontend Development 1 - Discover page for the frontend project of a Chamber of commerce site.">
     <meta name="author" content="Esteban Rubén Mangas Calva">
     <link rel="icon" href="favicon.ico">
 
     <!--Open Graph Facebook meta tags-->
-    <meta property="og:title" content="Querétaro Chamber of Commerce directory">
+    <meta property="og:title" content="Querétaro Chamber of Commerce discover">
     <meta property="og:description"
-        content="Querétaro's Chamber of Commerce directory. Find information about it's members and their businesses.">
-    <meta property="og:image" content="https://estebanruster.github.io/wdd231/chamber/images/queretaro-og-facebook-image.webp">
-    <meta property="og:url" content="https://estebanruster.github.io/wdd231/chamber/directory">
+        content="Querétaro's Chamber of Commerce discover page. Discover the chamber of Commerce and it's city.">
+    <meta property="og:image"
+        content="https://estebanruster.github.io/wdd231/chamber/images/queretaro-og-facebook-image.webp">
+    <meta property="og:url" content="https://estebanruster.github.io/wdd231/chamber/discover">
 
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,9 +32,11 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <!--Scripts for navigation, date and directory cards-->
-    <script defer src="scripts/directory-cards.js"></script>
+    <!--<script defer src="scripts/directory-cards.js"></script>-->
     <script defer src="scripts/navigation.js"></script>
     <script defer src="scripts/dates.js"></script>
+    <script defer src="scripts/modals.js"></script>
+    <!--<script defer src="scripts/weather.js"></script>-->
 </head>
 
 <body>
@@ -43,24 +46,16 @@
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li class="current"><a href="#">Directory</a></li>
+                <li class="current"><a href="#">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
         <button id="ham-button" class="hamburger" aria-label="menu"></button>
     </header>
     <main>
-        <h1>Directory</h1>
-        <nav id="nav-directory" class="navigation">
-            <ul>
-                <li><a href="#" id="card">Cards</a></li>
-                <li><a href="#" id="list">List</a></li>
-            </ul>
-        </nav>
-        <section class="directory">
-            <div class="cards"></div>
-        </section>
+        <h1>Discover</h1>
+        
     </main>
     <footer>
         <div class="contact">
