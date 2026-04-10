@@ -456,6 +456,26 @@ dialog li {
     padding: 0.3rem;
 }
 
+/*Styling discover cards and page*/
+#localStorage {
+    padding: 1rem;
+    font-weight: bolder;
+}
+
+#discover div {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--color-scheme-logo);
+}
+
+#discover div h2,
+#discover div figure,
+#discover div address,
+#discover div p,
+#discover div button {
+    margin-bottom: 0.7rem;
+}
+
 /*Styling footer*/
 footer {
     padding: 1rem 10px;

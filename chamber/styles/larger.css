@@ -52,6 +52,11 @@
         margin-top: 1.2rem;
     }
 
+    /*discover page hover img effect*/
+    #discover div figure img:hover {
+        box-shadow: 1px 1px 20px black;
+    }
+
     /*Footer in larger view*/
     footer {
         flex-direction: row;

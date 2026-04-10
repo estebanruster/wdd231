@@ -1,5 +1,7 @@
-//importing de JSON module data
+//importing de JSON module data and local storage function
 import { places } from "../data/places.mjs";
+import { localS } from "./localstorage.mjs";
+
 //console.log(places);
 const discover = document.querySelector('#discover');
 
@@ -50,3 +52,4 @@ function discoverCard(places) {
 }
 
 discoverCard(places);
+localS();
