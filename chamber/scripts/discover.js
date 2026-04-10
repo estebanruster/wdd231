@@ -27,6 +27,9 @@ function discoverCard(places) {
         
         photo.setAttribute('src', place.image_url);
         photo.setAttribute('alt', `Photo of ${place.name}`);
+        if (place.image_url == './images/discover-aqueduct-queretaro.webp') {
+            photo.setAttribute('fetchpriority', 'high');
+        };
         //photo.setAttribute('loading', 'lazy');
         photo.setAttribute('width', '300');
         photo.setAttribute('height', '200');
