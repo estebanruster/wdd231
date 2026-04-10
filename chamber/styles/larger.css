@@ -57,6 +57,23 @@
         box-shadow: 1px 1px 20px black;
     }
 
+    /*discover grid-template-areas style for medium screens*/
+    #discover div {
+        grid-template-areas: 
+        "photo name"
+        "photo description"
+        "photo address"
+        "photo button";
+    }
+
+    #discover div figure {
+        text-align: left;
+    }
+
+    #discover div figure figcaption {
+        max-width: 300px;
+    }
+
     /*Footer in larger view*/
     footer {
         flex-direction: row;
@@ -68,5 +85,26 @@
 
     footer .social {
         flex-basis: 300px;
+    }
+}
+
+/*creating @media query to display discover cards in two columns*/
+@media screen and (min-width: 1024px) {
+    #discover {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #discover div {
+        grid-template-areas:
+        "name name"
+        "photo description"
+        "address address"
+        "button button";
+    }
+
+    #discover div p {
+        text-align: center;
+        align-self: center;
     }
 }

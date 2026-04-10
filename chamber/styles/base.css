@@ -463,9 +463,39 @@ dialog li {
 }
 
 #discover div {
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photo"
+    "description"
+    "address"
+    "button";
     margin: 1rem;
     padding: 1rem;
     background-color: var(--color-scheme-logo);
+}
+
+#discover div h2 {
+    grid-area: name;
+}
+
+#discover div figure {
+    grid-area: photo;
+    text-align: center;
+}
+
+#discover div address {
+    grid-area: address;
+}
+
+#discover div p {
+    grid-area: description;
+}
+
+#discover div button {
+    grid-area: button;
+    width: fit-content;
+    justify-self: center;
 }
 
 #discover div h2,
@@ -474,6 +504,7 @@ dialog li {
 #discover div p,
 #discover div button {
     margin-bottom: 0.7rem;
+    padding: 0.5rem;
 }
 
 /*Styling footer*/
@@ -490,6 +521,7 @@ footer {
     display: flex;
     justify-content: center;
     column-gap: 10%;
+    height: fit-content;
 }
 
 .social a {

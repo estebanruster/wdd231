@@ -27,7 +27,7 @@ function discoverCard(places) {
         
         photo.setAttribute('src', place.image_url);
         photo.setAttribute('alt', `Photo of ${place.name}`);
-        photo.setAttribute('loading', 'lazy');
+        //photo.setAttribute('loading', 'lazy');
         photo.setAttribute('width', '300');
         photo.setAttribute('height', '200');
         caption.textContent = `View of ${place.name}`;
