@@ -27,7 +27,7 @@ function discoverCard(places) {
         
         photo.setAttribute('src', place.image_url);
         photo.setAttribute('alt', `Photo of ${place.name}`);
-        if (place.image_url == './images/discover-aqueduct-queretaro.webp') {
+        if (place.image_url == './images/discover-aqueduct-queretaro.webp' || place.image_url == './images/discover-downtown-queretaro.webp') {
             photo.setAttribute('fetchpriority', 'high');
         };
         //photo.setAttribute('loading', 'lazy');
