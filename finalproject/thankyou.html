@@ -5,50 +5,42 @@
     <!--Meta page tags and favicon-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Querétaro Chamber of Commerce join page</title>
+    <title>Sara Mangas Creaciones Newsletter</title>
     <meta name="description"
-        content="WDD 231 - Web Frontend Development 1 - Join page for the frontend project of a Chamber of commerce site.">
+        content="Sara Mangas Creaciones Newsletter page. Subscribe to get promos and notice of new products. You imagine it, we create it!">
     <meta name="author" content="Esteban Rubén Mangas Calva">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
 
     <!--Open Graph Facebook meta tags-->
-    <meta property="og:title" content="Querétaro Chamber of Commerce join">
+    <meta property="og:title" content="Sara Mangas Creaciones Newsletter page">
     <meta property="og:description"
-        content="Querétaro's Chamber of Commerce join page. Join the chamber of Commerce and make your business get to the next level.">
-    <meta property="og:image"
-        content="https://estebanruster.github.io/wdd231/chamber/images/queretaro-og-facebook-image.webp">
-    <meta property="og:url" content="https://estebanruster.github.io/wdd231/chamber/join">
+        content="Sara Mangas Creaciones. Subscribe to our newsletter. You imagine it, we create it!">
+    <meta property="og:image" content="https://estebanruster.github.io/wdd231/finalproject/images/og-smc.webp">
+    <meta property="og:url" content="https://estebanruster.github.io/wdd231/finalproject/newsletter">
 
-    <!--Google fonts-->
+    <!--Google fonts and style links-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Delius&display=swap"
         rel="stylesheet">
-
-    <!--stylesheet links-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/large.css">
 
-    <!--Scripts for navigation, date and directory cards-->
-    <!--<script defer src="scripts/directory-cards.js"></script>-->
-    <script defer src="scripts/navigation.js"></script>
-    <script defer src="scripts/dates.js"></script>
-    <script defer src="scripts/thankyou.js"></script>
-    <!--<script defer src="scripts/weather.js"></script>-->
+    <!--JavaScript script. Modules used-->
+    <script type="module" src="scripts/smc.js"></script>
 </head>
 
 <body>
     <header>
-        <img src="images/chamber-logo.svg" alt="Logo for the Chamber of Commerce of Querétaro" width="240" height="240">
-        <span>Queretaro Chamber of Commerce</span>
+        <img src="images/SMC-logo.webp" alt="Logo of Sara Mangas Creaciones" width="240" height="240">
+        <span>Sara Mangas Creaciones</span>
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li class="current"><a href="join.html">Join</a></li>
+                <!--<li><a href="#">About Us</a></li>-->
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li class="current"><a href="newsletter.html">Newsletter</a></li>
             </ul>
         </nav>
         <button id="ham-button" class="hamburger" aria-label="menu"></button>
@@ -57,27 +49,31 @@
         <h1>Thank you for your subscription</h1>
         <div id="subscriptionInfo"></div>
     </main>
+
     <footer>
         <div class="contact">
-            <span class="foot-title">Querétaro Chamber of Commerce</span>
-            <p>2021 Blvd. de la Pradera</p>
-            <p>Querétaro, México 763967</p>
-            <p>info@queretarocc.org</p>
-            <p>(442) 247-999X</p>
+            <span class="foot-title">Sara Mangas Creaciones</span>
+            <p>202 Blvd. del Refugio</p>
+            <p>Querétaro, México 76269</p>
+            <p>saramangascreaciones@gmail.com</p>
+            <p>+52 442 354 8436</p>
         </div>
         <div class="social">
-            <a href="#" target="_blank"><img src="images/twitter-x.svg" alt="Github account" width="16" height="16"></a>
-            <a href="#" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn account" width="16"
-                    height="16"></a>
-            <a href="#" target="_blank"><img src="images/instagram.svg" alt="Instagram account" width="16"
-                    height="16"></a>
+            <a href="https://www.facebook.com/profile.php?id=100083385300357" target="_blank"><img
+                    src="images/facebook.svg" alt="Facebook account" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/company/sara-mangas-creaciones/posts/?feedView=all" target="_blank"><img
+                    src="images/linkedin.svg" alt="LinkedIn account" width="16" height="16"></a>
+            <a href="https://www.instagram.com/saramangas_creaciones/" target="_blank"><img src="images/instagram.svg"
+                    alt="Instagram account" width="16" height="16"></a>
         </div>
         <div class="contact">
-            <p>WDD231 Esteban Rubén Mangas Calva</p>
-            <p>&copy;<span id="currentyear"></span> Querétaro Chamber of Commerce</p>
+            <p><a href="atributions.html">atributions</a> <a href="#">video</a></p>
+            <p>Esteban Rubén Mangas Calva</p>
+            <p>&copy;<span id="currentyear"></span> Sara Mangas Creaciones</p>
             <p id="lastModified"></p>
         </div>
     </footer>
+
 </body>
 
 </html>
