@@ -16,6 +16,7 @@ Base style for the final project; web site for Sara Mangas Creaciones (SMC)
     --SMC-text-font: 'Delius';
     --SMC-backup-font: sans-serif;
     --some-border: 3px solid gray;
+    --link-text-color: rgb(0, 0, 0);
 }
 
 /*Universal selector; defines basic styling for the whole web site.
@@ -66,6 +67,66 @@ header span {
     font-size: 1.2rem;
     align-self: center;
     font-weight: bold;
+}
+
+/*Styling ham menu button*/
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-column: 4 / 5;
+    align-self: center;
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2.39rem;
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+}
+
+/*Styling navigation bar*/
+.navigation {
+    display: none;
+}
+
+.navigation li {
+    padding: 0;
+}
+
+.navigation.show {
+    display: block;
+    margin: 1rem auto auto auto;
+    grid-row: 2 / 3;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: var(--link-text-color);
+    border-bottom: var(--some-border);
+    padding: 0.8rem 0;
+}
+
+.navigation a:hover {
+    background-color: var(--SMC-contrast-color);
+}
+
+.navigation ul li.current {
+    background-color: var(--SMC-second-color);
+    border-top: var(--some-border);
+    border-left: var(--some-border);
+    border-right: var(--some-border);
 }
 
 /*Styling for the siteplan*/
@@ -139,10 +200,60 @@ div {
     display: block;
 }
 
-/*Defining maximum width of the page*/
-@media screen and (min-width: 640px) {
-    body {
-        max-width: 1200px;
-        margin: auto;
-    }
+/*Styling footer*/
+footer div {
+    margin: 0;
+    border: none;
+}
+
+footer {
+    padding: 1rem 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--SMC-second-color);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 10%;
+    height: fit-content;
+    margin: 1rem;
+}
+
+.social a {
+    display: flex;
+    width: 45.5px;
+    height: 45.5px;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: var(--SMC-contrast-color);
+}
+
+.social a:hover {
+    border:var(--some-border) ;
+}
+
+.social img {
+    width: auto;
+    height: 30px;
+    display: block;
+    align-self: center;
+}
+
+footer .foot-title {
+    display: block;
+    font-weight: bolder;
+}
+
+footer p,
+footer .foot-title {
+    text-align: left;
+    padding: 0 1rem;
+}
+
+footer div {
+    padding-bottom: 10px;
 }
