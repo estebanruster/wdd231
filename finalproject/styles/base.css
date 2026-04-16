@@ -462,6 +462,7 @@ with date stored in local storage*/
 footer div {
     margin: 0;
     border: none;
+    padding-bottom: 10px;
 }
 
 footer {
@@ -510,10 +511,6 @@ footer p,
 footer .foot-title {
     text-align: left;
     padding: 0 1rem;
-}
-
-footer div {
-    padding-bottom: 10px;
 }
 
 footer a {
