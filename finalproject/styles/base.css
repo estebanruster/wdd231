@@ -229,16 +229,21 @@ section {
 .call-to-action {
     margin: 0 1.5rem;
     padding: 0.7rem;
-    width: fit-content;
     position: sticky;
     bottom: 30px;
+    border: var(--some-border);
+}
+
+/*call to action and link buttons style*/
+.linkbutton,
+.call-to-action {
     text-decoration: none;
     color: var(--link-text-color);
-    background-color: var(--SMC-second-color);
-    border: var(--some-border);
+    background-color: var(--SMC-contrast-color);
     border-radius: 100px;
 }
 
+.linkbutton:hover,
 .call-to-action:hover {
     background-color: var(--SMC-first-color);
     font-weight: bold;
@@ -265,6 +270,152 @@ section {
 .news p {
     grid-area: text;
     align-self: center;
+}
+
+/*Styling form*/
+#join-grid {
+    background-color: var(--SMC-contrast-color);
+    border: none;
+}
+
+form {
+    margin: 1rem 2%;
+    margin-top: 0;
+}
+
+form h2 {
+    font-size: 1.2rem;
+    margin: 0 0 .2rem 0;
+    border-bottom: var(--some-border);
+}
+
+label {
+    display: block;
+    font-size: .9rem;
+    padding-top: .2rem;
+}
+
+input[type=text],
+input[type=tel],
+input[type=date],
+input[type=email],
+select {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border: 1px solid rgba(153, 153, 153);
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: rgba(85, 85, 85);
+    font-size: 1rem;
+    color: #3D405B;
+    width: 250px;
+}
+
+input:required {
+    border-left-color: rgba(215, 0, 0);
+}
+
+input:focus,
+select:focus {
+    border-left-color: rgb(0, 0, 0);
+    outline: none;
+}
+
+input:required:valid {
+    border-left-color: rgb(0, 128, 0);
+}
+
+input[type=submit] {
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--SMC-second-color);
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type=submit]:focus,
+input[type=submit]:hover {
+    background-color: var(--SMC-first-color);
+    outline: 2px solid rgba(0, 0, 0);
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #3D405B;
+}
+
+#subscriptionInfo {
+    background-color: rgba(244, 241, 222);
+        padding: 0 1rem;
+        border: var(--some-border);
+        border-radius: 10px;
+        margin: 1rem;
+        max-width: 95%;
+}
+
+#subscriptionInfo p {
+    padding: 0.7rem 0;
+}
+
+#aboutnews {
+    background-color: transparent;
+}
+
+.customer p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal-button {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: var(--SMC-contrast-color);
+    border-radius: 1rem;
+    border: var(--some-border);
+    width: fit-content;
+    appearance: none;
+
+}
+
+.modal-button:hover {
+    background-color: var(--SMC-first-color);
+    font-weight: bolder;
+}
+
+dialog {
+    max-width: 75%;
+    width: 900px;
+    background-color: var(--SMC-second-color);
+    border: var(--some-border);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: auto;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    background-color: var(--SMC-contrast-color);
+    border: var(--some-border);
+    padding: 0.75rem 0.826rem;
+}
+
+dialog p {
+    text-align: center;
+    font-weight: bolder;
+    margin: 1rem;
 }
 
 /*Styling footer*/
@@ -323,4 +474,8 @@ footer .foot-title {
 
 footer div {
     padding-bottom: 10px;
+}
+
+footer a {
+    color: var(--link-text-color);
 }

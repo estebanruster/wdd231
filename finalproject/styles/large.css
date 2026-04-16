@@ -62,6 +62,12 @@
         margin: auto;
     }
 
+    /*Join page grid*/
+    #join-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     /*Footer in larger view*/
     footer {
             flex-direction: row;

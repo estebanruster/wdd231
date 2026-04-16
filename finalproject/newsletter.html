@@ -47,7 +47,58 @@
     </header>
     <main>
         <h1>Newsletter</h1>
+        <span id="localstorage"></span>
+        <div id="join-grid">
+            <form method="get" action="thankyou.html" class="joinForm">
+                <h2>Newsletter subscription form</h2>
+                <label>First Name <input type="text" required name="first" title="Your first name"
+                        autocomplete="given-name"></label>
+                <label>Last Name <input type="text" required name="last" title="Your last name"
+                        autocomplete="family-name"></label>
+                <label>Email <input type="email" required name="email" title="Your email" autocomplete="email"
+                        placeholder="saramangas97@gmail.com"></label>
+                <label>Cell Phone <input type="tel" required name="phone" title="Your phone number" autocomplete="tel"></label>
+                <label>Type of customer
+                    <select name="customer">
+                        <option value="">None</option>
+                        <option value="Private">Private Person</option>
+                        <option value="Business">Small Business</option>
+                        <option value="Representative">Business representative</option>
+                    </select>
+                </label>
+                <h2>Information requested</h2>
+                <label><input type="radio" name="information" value="All" checked> I want to receive information of promos, discounts, new releases and season news</label>
+                <label><input type="radio" name="information" value="Promos"> I just want to receive information of promos and discounts</label>
+                <label><input type="radio" name="information" value="News"> I just want to receive information of new releases and season news</label>
+                <input type="hidden" name="timestamp" id="timestamp" value="">
+                <input type="submit" value="Subscribe to the newsletter">
+            </form>
+            <section id="aboutnews">
+                <h2>About Newsletter</h2>
+                <div class="customer">
+                    <p>Private Person Customer</p>
+                    <button class="modal-button" id="private">Learn More</button>
+                </div>
+                <div class="customer">
+                    <p>Small Business and Business representative</p>
+                    <button class="modal-button" id="business">Learn More</button>
+                </div>
+                <div class="whatsapp">
+                    <h3>Contact us</h3>
+                    <p>Want to purchase something, make an order, or want to ask us somethin? You can contact us through <a href="#" class="linkbutton">Whatsapp</a></p>
+                </div>
+            </section>
+        </div>
 
+        <!--Modal dialog to be display when the user clicks the button in each memberhipLvl div cards-->
+        <dialog id="modal-private">
+            <button id="close-private">❌</button>
+            <p>We manage products and offers for private persons (non-profitable). Either you want a personalized product just for you, for a gift or help for a party or event; we can do it.</p>
+        </dialog>
+        <dialog id="modal-business">
+            <button id="close-business">❌</button>
+            <p>Either for small business, entrepreneurs or bigger business (if you are a representative for your organization) we have executive products and offers. If you need business cards, stickers, personalized stationery, gifts with your brand in it or decoration for an event; we can do it</p>
+        </dialog>
     </main>
 
     <footer>
