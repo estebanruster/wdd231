@@ -4,6 +4,7 @@ import { dates } from "./dates.mjs";
 import { modals } from "./modals.mjs";
 import { thankyou } from "./thankyou.mjs";
 import { productTemplate } from "./productTemplate.mjs";
+import { localS } from "./localstorage.mjs";
 
 //Handling hambutton for navigation
 const hambutton = document.querySelector("#ham-button");
@@ -41,3 +42,4 @@ apiFetch();
 thankyou(timestamp);
 dates();
 modals();
+localS();

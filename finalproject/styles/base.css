@@ -418,7 +418,16 @@ dialog p {
     margin: 1rem;
 }
 
-/*Styling card display of products in the catalogue*/
+/*Styling card display of products in the catalogue and span with message
+with date stored in local storage*/
+#localS {
+    margin-left: 0.8rem;
+    background-color: var(--SMC-first-transparency);
+    border-radius: 10px 0;
+    border: var(--some-border);
+    padding: 0.5rem;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
