@@ -10,7 +10,7 @@ Base style for the final project; web site for Sara Mangas Creaciones (SMC)
     --SMC-first-color: rgb(250, 176, 214);
     --SMC-first-transparency: rgba(250, 176, 214, 0.8);
     --SMC-second-color: rgb(128, 208, 205);
-    --SMC-second-transparency: rgba(128, 208, 205, 0.8);
+    --SMC-second-transparency: rgba(128, 208, 205, 0.6);
     --SMC-contrast-color: rgb(255, 255, 255);
     --SMC-headings-font: 'Comic Relief';
     --SMC-text-font: 'Delius';
@@ -135,8 +135,7 @@ ul {
 }
 
 p,
-li, 
-a {
+li {
     padding: 1rem;
 }
 
@@ -144,6 +143,10 @@ div {
     background-color: var(--SMC-second-color);
     margin: 1.9rem 0;
     border: var(--some-border);
+}
+
+section {
+    background-color: var(--SMC-second-color);
 }
 
 #site-plan {
@@ -200,6 +203,70 @@ div {
     display: block;
 }
 
+/*Styling hero img and div in the homepage*/
+.hero,
+#welcome {
+    margin: 0;
+    border: none;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+#welcome {
+    position: absolute;
+    top: 260px;
+    max-width: 1200px;
+    height: fit-content;
+    color: var(--link-text-color);
+    font-size: larger;
+    font-weight: bolder;
+    background-color: var(--SMC-second-transparency);
+}
+
+.call-to-action {
+    margin: 0 1.5rem;
+    padding: 0.7rem;
+    width: fit-content;
+    position: sticky;
+    bottom: 30px;
+    text-decoration: none;
+    color: var(--link-text-color);
+    background-color: var(--SMC-second-color);
+    border: var(--some-border);
+    border-radius: 100px;
+}
+
+.call-to-action:hover {
+    background-color: var(--SMC-first-color);
+    font-weight: bold;
+}
+
+/*Styling homepage*/
+.news {
+    display: grid;
+    grid-template-areas:
+    "title title"
+    "image text"
+    "image text";
+}
+
+.news h3 {
+    grid-area: title;
+}
+
+.news img {
+    display: block;
+    grid-area: image;
+}
+
+.news p {
+    grid-area: text;
+    align-self: center;
+}
+
 /*Styling footer*/
 footer div {
     margin: 0;
@@ -207,7 +274,7 @@ footer div {
 }
 
 footer {
-    padding: 1rem 10px;
+    padding: 1rem 0;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -220,7 +287,7 @@ footer {
     justify-content: center;
     column-gap: 10%;
     height: fit-content;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 .social a {

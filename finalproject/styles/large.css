@@ -1,46 +1,82 @@
 @media screen and (min-width: 640px) {
     header,
-        main,
-        nav,
-        footer {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-    
-        /*Hidding menu button*/
-        .hamburger {
-            display: none;
-        }
-    
-        /*Showing nav bar*/
-        .navigation {
-            display: block;
-            border-bottom: var(--some-border);
-            grid-row: 1 / 2;
-            grid-column: 3 / 5;
-            margin: auto;
-        }
-    
-        .navigation ul {
+    main,
+    nav,
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /*Hidding menu button*/
+    .hamburger {
+        display: none;
+    }
+
+    /*Showing nav bar*/
+    .navigation {
+        display: block;
+        border-bottom: var(--some-border);
+        grid-row: 1 / 2;
+        grid-column: 3 / 5;
+        margin: auto;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .navigation a {
+        border: none;
+        padding: 0.8rem 10px;
+    }
+
+    /*Styling hero img and div in the homepage*/
+    #welcome {
+        top: 200px;
+        left: 160px;
+        right: 160px;
+        text-align: center;
+    }
+
+    /*Styling homepage*/
+    .homesec {
+        display: grid;
+        grid-template-areas: 
+        "title title"
+        "news1 news2";
+    }
+
+    .homesec h2 {
+        grid-area: title;
+    }
+
+    .news {
+        grid-template-areas:
+        "title title"
+        "image image"
+        "text text";
+    }
+
+    .news img {
+        margin: auto;
+    }
+
+    /*Footer in larger view*/
+    footer {
             flex-direction: row;
-            justify-content: left;
-        }
-    
-        .navigation a {
-            border: none;
-            padding: 0.8rem 10px;
         }
 
-        /*Footer in larger view*/
-        footer {
-                flex-direction: row;
-            }
-    
-            footer div {
-                padding: 10px;
-            }
-    
-            footer .social {
-                flex-basis: 300px;
-            }
+    footer div {
+        padding: 0.5rem;
+    }
+
+    .contact {
+        flex-grow: 2;
+    }
+
+    .social {
+        flex-grow: 1;
+    }
+
 }
