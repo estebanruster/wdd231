@@ -3,6 +3,7 @@ needed from the modules and manage the addEventListener*/
 import { dates } from "./dates.mjs";
 import { modals } from "./modals.mjs";
 import { thankyou } from "./thankyou.mjs";
+import { productTemplate } from "./productTemplate.mjs";
 
 //Handling hambutton for navigation
 const hambutton = document.querySelector("#ham-button");
@@ -17,6 +18,26 @@ if (timestamp) {
     timestamp.value = new Date().toDateString();
 }
 
+//variables declared and async function declared to fecth the JSON in data
+const url = "./data/catalogue.json";
+async function apiFetch() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            //testing console.log(data);
+            productTemplate(data);
+        }
+        else {
+            throw Error(await response.text());
+        }
+    }
+    catch (error) {
+        console.log(error);
+    }
+}
+
+apiFetch();
 thankyou(timestamp);
 dates();
 modals();

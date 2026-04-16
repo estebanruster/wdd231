@@ -418,6 +418,36 @@ dialog p {
     margin: 1rem;
 }
 
+/*Styling card display of products in the catalogue*/
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+}
+
+.cards section {
+    margin: auto;
+    height: 97%;
+    width: 95%;
+    padding: 1rem;
+    background-color: var(--SMC-second-transparency);
+    border: var(--some-border);
+    border-radius: 10px;
+}
+
+.cards section p {
+    font-weight: bold;
+}
+
+.cards section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /*Styling footer*/
 footer div {
     margin: 0;

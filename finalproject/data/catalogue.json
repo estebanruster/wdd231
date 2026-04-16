@@ -1,0 +1,251 @@
+{
+    "products": [
+        {
+            "name": "Suncatcher",
+            "type": "vinyl",
+            "price": "$50 MXN",
+            "color": [
+                "golden",
+                "silver",
+                "red",
+                "yellow"
+            ],
+            "size": [
+                "small",
+                "large"
+            ],
+            "season": [
+                "all year"
+            ],
+            "image": "./images/suncacher.webp"
+        },
+        {
+            "name": "Vinyl cut",
+            "type": "vinyl",
+            "price": "$100 MXN",
+            "color": [
+                "golden",
+                "silver",
+                "black",
+                "white"
+            ],
+            "size": [
+                "small",
+                "large"
+            ],
+            "season": [
+                "all year"
+            ],
+            "image": "./images/vinil.webp"
+        },
+        {
+            "name": "Agenda",
+            "type": "impressions",
+            "price": "$400 MXN",
+            "color": [
+                "personalized"
+            ],
+            "size": [
+                "half letter"
+            ],
+            "season": [
+                "spring",
+                "winter"
+            ],
+            "image": "./images/agenda.webp"
+        },
+        {
+            "name": "Calendar",
+            "type": "impressions",
+            "price": "$250 MXN",
+            "color": [
+                "personalized"
+            ],
+            "size": [
+                "small",
+                "large"
+            ],
+            "season": [
+                "spring",
+                "winter"
+            ],
+            "image": "./images/calendario.webp"
+        },
+        {
+            "name": "Notebook",
+            "type": "impressions",
+            "price": "$250 MXN",
+            "color": [
+                "personalized"
+            ],
+            "size": [
+                "small",
+                "large"
+            ],
+            "season": [
+                "all year"
+            ],
+            "image": "./images/libreta.webp"
+        },
+        {
+            "name": "Business cards",
+            "type": "impressions",
+            "price": "$180 MXN",
+            "color": [
+                "personalized"
+            ],
+            "size": [
+                "9x5CM"
+            ],
+            "season": [
+                "all year"
+            ],
+            "image": "./images/tpresentacion.webp"
+        },
+        {
+            "name": "Portrait holder",
+            "type": "impressions",
+            "price": "$300 MXN",
+            "color": [
+                "personalized"
+            ],
+            "size": [
+                "20x25CM"
+            ],
+            "season": [
+                "all year"
+            ],
+            "image": "./images/cuadro.webp"
+        },
+        {
+            "name": "Magnet calendar",
+            "type": "impressions",
+            "price": "$200 MXN",
+            "color": [
+                "personalized"
+            ],
+            "size": [
+                "10x8CM"
+            ],
+            "season": [
+                "spring",
+                "winter"
+            ],
+            "image": "./images/iman.webp"
+        },
+        {
+            "name": "Magnet separator",
+            "type": "impressions",
+            "price": "$35 MXN",
+            "color": [
+                "personalized"
+            ],
+            "size": [
+                "8x4CM"
+            ],
+            "season": [
+                "all year"
+            ],
+            "image": "./images/separadores.webp"
+        },
+        {
+            "name": "Keychain",
+            "type": "impressions",
+            "price": "$40 MXN (each)",
+            "color": [
+                "personalized"
+            ],
+            "size": [
+                "5x3CM"
+            ],
+            "season": [
+                "all year"
+            ],
+            "image": "./images/llavero.webp"
+        },
+        {
+            "name": "Totebag",
+            "type": "textile",
+            "price": "$200 MXN",
+            "color": [
+                "black",
+                "white"
+            ],
+            "size": [
+                "25x30CM"
+            ],
+            "season": [
+                "all year"
+            ],
+            "image": "./images/totebag.webp"
+        },
+        {
+            "name": "T-shirt",
+            "type": "textile",
+            "price": "$270 MXN",
+            "color": [
+                "black",
+                "white"
+            ],
+            "size": [
+                "small",
+                "medium",
+                "large",
+                "extra large"
+            ],
+            "season": [
+                "all year"
+            ],
+            "image": "./images/playera.webp"
+        },
+        {
+            "name": "Apron",
+            "type": "textile",
+            "price": "$250 MXN",
+            "color": [
+                "black"
+            ],
+            "size": [
+                "one size"
+            ],
+            "season": [
+                "all year"
+            ],
+            "image": "./images/mandil.webp"
+        },
+        {
+            "name": "Thermos",
+            "type": "thermos",
+            "price": "$300 MXN",
+            "color": [
+                "black",
+                "blue",
+                "pink"
+            ],
+            "size": [
+                "20oz"
+            ],
+            "season": [
+                "all year"
+            ],
+            "image": "./images/termo.webp"
+        },
+        {
+            "name": "Cup",
+            "type": "thermos",
+            "price": "$145 MXN",
+            "color": [
+                "white + black",
+                "white + blue",
+                "white"
+            ],
+            "size": [
+                "10oz"
+            ],
+            "season": [
+                "all year"
+            ],
+            "image": "./images/taza.webp"
+        }
+    ]
+}

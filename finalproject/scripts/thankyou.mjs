@@ -2,8 +2,6 @@ export function thankyou(timestamp) {
     //Using the URLSearchParams, get the info in the string in the url in window.location.search
     const myInfo = new URLSearchParams(window.location.search);
 
-    console.log(myInfo);
-
     const subinfo = document.querySelector('#subscriptionInfo')
     //Constructing the subscription thankyou message in thankyou.html
 
