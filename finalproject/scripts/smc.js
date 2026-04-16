@@ -2,6 +2,7 @@
 needed from the modules and manage the addEventListener*/
 import { dates } from "./dates.mjs";
 import { modals } from "./modals.mjs";
+import { thankyou } from "./thankyou.mjs";
 
 //Handling hambutton for navigation
 const hambutton = document.querySelector("#ham-button");
@@ -10,5 +11,12 @@ hambutton.addEventListener('click', () => {
     document.querySelector("#nav-bar").classList.toggle("show");
 });
 
+//Variable declaration to get the date the form in newsletter is submitted. Needed for the function of thankyou
+const timestamp = document.querySelector('#timestamp');
+if (timestamp) {
+    timestamp.value = new Date().toDateString();
+}
+
+thankyou(timestamp);
 dates();
 modals();

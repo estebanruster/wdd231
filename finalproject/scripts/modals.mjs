@@ -11,19 +11,28 @@ export function modals() {
     const businessmodal = document.querySelector('#modal-business');
 
     //addEventListener to open and close modal
-    privatebutton.addEventListener('click', () => {
-        privatemodal.showModal();
-    });
 
-    businessbutton.addEventListener('click', () => {
-        businessmodal.showModal();
-    });
+    if (privatebutton) {
+        privatebutton.addEventListener('click', () => {
+            privatemodal.showModal();
+        });
+    }
 
-    closeprivate.addEventListener('click', () => {
-        privatemodal.close();
-    });
+    if (businessbutton) {
+        businessbutton.addEventListener('click', () => {
+            businessmodal.showModal();
+        });
+    }
 
-    closebusiness.addEventListener('click', () => {
-        businessmodal.close();
-    });
+    if (closeprivate) {
+        closeprivate.addEventListener('click', () => {
+            privatemodal.close();
+        });
+    }
+
+    if (closebusiness) {
+        closebusiness.addEventListener('click', () => {
+            businessmodal.close();
+        });
+    }
 }
